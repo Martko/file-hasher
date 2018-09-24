@@ -1,0 +1,27 @@
+{
+  "name": "file-hasher",
+  "version": "1.0.0",
+  "description": "Node.js library for generating file hashes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Martko/file-hasher.git"
+  },
+  "keywords": [
+    "hash, md5, file"
+  ],
+  "author": "Martin Koidu <mkoidu@gmail.com>",
+  "license": "MIT License",
+  "bugs": {
+    "url": "https://github.com/Martko/file-hasher/issues"
+  },
+  "homepage": "https://github.com/Martko/file-hasher#readme",
+  "devDependencies": {
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}
