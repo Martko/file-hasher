@@ -11,7 +11,11 @@
     "url": "git+https://github.com/Martko/file-hasher.git"
   },
   "keywords": [
-    "hash, md5, file"
+    "hash",
+    "md5",
+    "file",
+    "file-hash",
+    "checksum"
   ],
   "author": "Martin Koidu <mkoidu@gmail.com>",
   "license": "MIT License",

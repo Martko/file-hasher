@@ -1,11 +1,11 @@
 const fs = require('fs');
 const crypto = require('crypto');
 
-function convert(stream) {
-  return Buffer.from(stream).toString('base64');
+function convert(stream, encoding) {
+  return Buffer.from(stream).toString(encoding);
 }
 
-function hashFile(filename, callback, algorithm) {
+function hashFile(filename, callback, algorithm, encoding) {
   if (typeof callback !== 'function') {
     throw new TypeError('Argument "callback" must be a function');
   }
@@ -14,7 +14,10 @@ function hashFile(filename, callback, algorithm) {
   const input = fs.createReadStream(filename);
 
   input.on('error', err => callback(err));
-  output.once('readable', () => callback(null, convert(output.read())));
+  output.once('readable', () => callback(null, convert(
+    output.read(),
+    encoding || 'hex',
+  )));
 
   input.pipe(output);
 }
