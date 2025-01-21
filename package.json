@@ -1,6 +1,6 @@
 {
   "name": "file-hasher",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Node.js library for generating file hashes",
   "main": "index.js",
   "scripts": {
